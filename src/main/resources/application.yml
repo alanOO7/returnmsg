@@ -1,0 +1,42 @@
+server:
+  port: 8014
+  servlet:
+    context-path: /returnmsg
+spring:
+  jpa:
+    database: oracle
+    show-sql: true
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@10.1.1.30:1521:DBTEST
+    url: jdbc:oracle:thin:@172.30.113.2:1521:e910
+    username: CRPDTA
+#    password: P1qaz#EDC
+    password: CRPDTA
+
+
+thymeleaf:
+  enabled: true  #开启thymeleaf视图解析
+  encoding: utf-8  #编码
+  prefix: classpath:/templates/  #前缀
+  cache: false  #是否使用缓存
+  mode: HTML  #严格的HTML语法模式
+  suffix: .html  #后缀名
+
+#配置日志
+logging:
+  #level 日志等级 指定命名空间的日志输出
+  level:
+#    com.el.returnmsg.dao: debug
+    com.el.returnmsg: debug
+  #file 指定输出文件的存储路径
+  #pattern 指定输出场景的日志输出格式
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  file:
+    name: ./logs/returnmsg/app.log
+    max-size: 10MB
+
+url:
+  returnMsg: http://172.30.133.5:1916/FuIDNpxH?iesb_api_key=fa9044da162c49549e86ace100b787fc

@@ -1,0 +1,79 @@
+2020-10-13 09:42:44,997 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Starting ReturnmsgApplication on DESKTOP-I614DFB with PID 18144 (D:\Users\alan_\IdeaProjects\returnmsg\target\classes started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
+2020-10-13 09:42:45,002 INFO  [main] com.el.returnmsg.ReturnmsgApplication : No active profile set, falling back to default profiles: default
+2020-10-13 09:42:46,155 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8060 (http)
+2020-10-13 09:42:46,166 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-10-13 09:42:46,166 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-13 09:42:46,289 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-10-13 09:42:46,290 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1231 ms
+2020-10-13 09:42:46,615 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 09:42:46,667 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-10-13 09:42:46,798 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8060 (http) with context path ''
+2020-10-13 09:42:46,807 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Started ReturnmsgApplication in 2.223 seconds (JVM running for 4.955)
+2020-10-13 09:42:58,567 INFO  [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 09:42:58,567 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-10-13 09:42:58,572 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2020-10-13 09:43:00,134 INFO  [http-nio-8060-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2020-10-13 09:43:00,137 WARN  [http-nio-8060-exec-2] com.zaxxer.hikari.util.DriverDataSource : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-13 09:43:02,612 INFO  [http-nio-8060-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2020-10-13 09:43:02,621 DEBUG [http-nio-8060-exec-2] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==>  Preparing: select * from f551513z where axedsp = ? and axactn=?
+2020-10-13 09:43:02,691 DEBUG [http-nio-8060-exec-2] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==> Parameters: N(String), A(String)
+2020-10-13 09:43:02,793 DEBUG [http-nio-8060-exec-2] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : <==      Total: 0
+2020-10-13 09:43:02,802 INFO  [http-nio-8060-exec-2] com.el.returnmsg.service.F551513ZService : JSON 查询无数据
+2020-10-13 09:44:27,672 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Starting ReturnmsgApplication on DESKTOP-I614DFB with PID 16688 (D:\Users\alan_\IdeaProjects\returnmsg\target\classes started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
+2020-10-13 09:44:27,675 DEBUG [main] com.el.returnmsg.ReturnmsgApplication : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 09:44:27,676 INFO  [main] com.el.returnmsg.ReturnmsgApplication : No active profile set, falling back to default profiles: default
+2020-10-13 09:44:28,806 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8060 (http)
+2020-10-13 09:44:28,815 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-10-13 09:44:28,815 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-13 09:44:28,940 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-10-13 09:44:28,940 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2020-10-13 09:44:29,260 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 09:44:29,332 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-10-13 09:44:29,477 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8060 (http) with context path ''
+2020-10-13 09:44:29,486 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Started ReturnmsgApplication in 2.219 seconds (JVM running for 4.996)
+2020-10-13 09:44:39,040 INFO  [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 09:44:39,040 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-10-13 09:44:39,044 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 4 ms
+2020-10-13 09:44:39,086 INFO  [http-nio-8060-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2020-10-13 09:44:39,088 WARN  [http-nio-8060-exec-1] com.zaxxer.hikari.util.DriverDataSource : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-13 09:44:41,831 INFO  [http-nio-8060-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2020-10-13 09:44:41,840 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==>  Preparing: select * from f551513z where axedsp = ? and axactn=?
+2020-10-13 09:44:41,898 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==> Parameters: N(String), A(String)
+2020-10-13 09:44:41,968 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : <==      Total: 0
+2020-10-13 09:44:41,972 INFO  [http-nio-8060-exec-1] com.el.returnmsg.service.F551513ZService : JSON 查询无数据
+2020-10-13 09:45:04,015 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Starting ReturnmsgApplication on DESKTOP-I614DFB with PID 1896 (D:\Users\alan_\IdeaProjects\returnmsg\target\classes started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
+2020-10-13 09:45:04,018 DEBUG [main] com.el.returnmsg.ReturnmsgApplication : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 09:45:04,019 INFO  [main] com.el.returnmsg.ReturnmsgApplication : No active profile set, falling back to default profiles: default
+2020-10-13 09:45:05,178 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8060 (http)
+2020-10-13 09:45:05,189 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-10-13 09:45:05,189 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-13 09:45:05,320 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-10-13 09:45:05,320 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms
+2020-10-13 09:45:05,657 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 09:45:05,713 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-10-13 09:45:05,846 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8060 (http) with context path ''
+2020-10-13 09:45:05,855 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Started ReturnmsgApplication in 2.261 seconds (JVM running for 5.036)
+2020-10-13 09:45:08,909 INFO  [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 09:45:08,909 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-10-13 09:45:08,914 INFO  [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2020-10-13 09:45:08,953 INFO  [http-nio-8060-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2020-10-13 09:45:08,955 WARN  [http-nio-8060-exec-1] com.zaxxer.hikari.util.DriverDataSource : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-13 09:45:11,355 INFO  [http-nio-8060-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2020-10-13 09:45:11,362 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==>  Preparing: select * from f551513z where axedsp = ? and axactn=?
+2020-10-13 09:45:11,423 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : ==> Parameters: N(String), A(String)
+2020-10-13 09:45:11,490 DEBUG [http-nio-8060-exec-1] com.el.returnmsg.dao.F551513ZDao.queryF551513ZList : <==      Total: 0
+2020-10-13 09:45:11,494 INFO  [http-nio-8060-exec-1] com.el.returnmsg.service.F551513ZService : JSON 查询无数据
+2020-10-13 09:46:27,224 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Starting ReturnmsgApplicationTests on DESKTOP-I614DFB with PID 17464 (started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
+2020-10-13 09:46:27,225 DEBUG [main] com.el.returnmsg.ReturnmsgApplicationTests : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 09:46:27,225 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : No active profile set, falling back to default profiles: default
+2020-10-13 09:46:29,248 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 09:46:29,367 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-10-13 09:46:29,870 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Started ReturnmsgApplicationTests in 3.018 seconds (JVM running for 4.156)
+2020-10-13 09:46:30,211 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 10:21:16,613 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Starting ReturnmsgApplicationTests on DESKTOP-I614DFB with PID 1760 (started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
+2020-10-13 10:21:16,614 DEBUG [main] com.el.returnmsg.ReturnmsgApplicationTests : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 10:21:16,615 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : No active profile set, falling back to default profiles: default
+2020-10-13 10:21:18,622 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 10:21:18,756 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-10-13 10:21:19,247 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Started ReturnmsgApplicationTests in 3.003 seconds (JVM running for 4.12)
+2020-10-13 10:21:19,631 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
