@@ -1,55 +1,294 @@
-2020-11-03 10:03:25,984 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Starting ReturnmsgApplication on DESKTOP-I614DFB with PID 3772 (D:\Users\alan_\IdeaProjects\returnmsg\target\classes started by alan_ in D:\Users\alan_\IdeaProjects\returnmsg)
-2020-11-03 10:03:26,000 DEBUG [main] com.el.returnmsg.ReturnmsgApplication : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
-2020-11-03 10:03:26,000 INFO  [main] com.el.returnmsg.ReturnmsgApplication : No active profile set, falling back to default profiles: default
-2020-11-03 10:03:27,316 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8014 (http)
-2020-11-03 10:03:27,316 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2020-11-03 10:03:27,316 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-11-03 10:03:27,457 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/returnmsg] : Initializing Spring embedded WebApplicationContext
-2020-11-03 10:03:27,457 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
-2020-11-03 10:03:27,847 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-03 10:03:27,925 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
-2020-11-03 10:03:28,035 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
-2020-11-03 10:03:28,097 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8014 (http) with context path '/returnmsg'
-2020-11-03 10:03:28,113 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Started ReturnmsgApplication in 2.877 seconds (JVM running for 7.547)
-2020-11-03 10:10:48,416 INFO  [http-nio-8014-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/returnmsg] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-03 10:10:48,416 INFO  [http-nio-8014-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
-2020-11-03 10:10:48,423 INFO  [http-nio-8014-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
-2020-11-03 10:10:48,526 INFO  [http-nio-8014-exec-1] com.el.returnmsg.controller.F551513ZController : =========delete begin=====
-2020-11-03 10:10:48,526 INFO  [http-nio-8014-exec-1] com.el.returnmsg.controller.F551513ZController : =inputJson=F551513ZJson{operationType=1, pids=[6], operator='SG11017', operateTime='2020-10-21 15:04:07'}
-2020-11-03 10:10:48,551 INFO  [http-nio-8014-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
-2020-11-03 10:10:48,553 WARN  [http-nio-8014-exec-1] com.zaxxer.hikari.util.DriverDataSource : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2020-11-03 10:10:53,044 INFO  [http-nio-8014-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
-2020-11-03 10:10:53,058 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==>  Preparing: DELETE FROM f1511b WHERE njpost!='D' AND trim(njpid) IN ('6')
-2020-11-03 10:10:53,133 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==> Parameters: 
-2020-11-03 10:10:53,213 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : <==    Updates: 1
-2020-11-03 10:10:53,216 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==>  Preparing: DELETE FROM F551511Z WHERE trim(axpid) IN ('6')
-2020-11-03 10:10:53,217 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==> Parameters: 
-2020-11-03 10:10:53,249 DEBUG [http-nio-8014-exec-1] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : <==    Updates: 0
-2020-11-03 10:10:53,249 INFO  [http-nio-8014-exec-1] com.el.returnmsg.controller.F551513ZController : delete info:Y
-2020-11-03 10:11:52,979 INFO  [http-nio-8014-exec-3] com.el.returnmsg.controller.F551513ZController : =========delete begin=====
-2020-11-03 10:11:52,980 INFO  [http-nio-8014-exec-3] com.el.returnmsg.controller.F551513ZController : =inputJson=F551513ZJson{operationType=1, pids=[67], operator='SG11017', operateTime='2020-10-21 15:04:07'}
-2020-11-03 10:11:52,993 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==>  Preparing: DELETE FROM f1511b WHERE njpost!='D' AND trim(njpid) IN ('67')
-2020-11-03 10:11:52,994 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==> Parameters: 
-2020-11-03 10:11:53,004 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : <==    Updates: 0
-2020-11-03 10:11:53,004 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==>  Preparing: DELETE FROM F551511Z WHERE trim(axpid) IN ('67')
-2020-11-03 10:11:53,004 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==> Parameters: 
-2020-11-03 10:11:53,039 DEBUG [http-nio-8014-exec-3] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : <==    Updates: 1
-2020-11-03 10:11:53,039 INFO  [http-nio-8014-exec-3] com.el.returnmsg.controller.F551513ZController : delete info:Y
-2020-11-03 10:13:09,708 INFO  [http-nio-8014-exec-6] com.el.returnmsg.controller.F551513ZController : =========delete begin=====
-2020-11-03 10:13:09,708 INFO  [http-nio-8014-exec-6] com.el.returnmsg.controller.F551513ZController : =inputJson=F551513ZJson{operationType=1, pids=[68], operator='SG11017', operateTime='2020-10-21 15:04:07'}
-2020-11-03 10:13:09,719 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==>  Preparing: DELETE FROM f1511b WHERE njpost!='D' AND trim(njpid) IN ('68')
-2020-11-03 10:13:09,719 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==> Parameters: 
-2020-11-03 10:13:09,735 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : <==    Updates: 1
-2020-11-03 10:13:09,735 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==>  Preparing: DELETE FROM F551511Z WHERE trim(axpid) IN ('68')
-2020-11-03 10:13:09,735 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==> Parameters: 
-2020-11-03 10:13:10,056 DEBUG [http-nio-8014-exec-6] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : <==    Updates: 1
-2020-11-03 10:13:10,057 INFO  [http-nio-8014-exec-6] com.el.returnmsg.controller.F551513ZController : delete info:Y
-2020-11-03 10:13:21,502 INFO  [http-nio-8014-exec-7] com.el.returnmsg.controller.F551513ZController : =========delete begin=====
-2020-11-03 10:13:21,502 INFO  [http-nio-8014-exec-7] com.el.returnmsg.controller.F551513ZController : =inputJson=F551513ZJson{operationType=1, pids=[62], operator='SG11017', operateTime='2020-10-21 15:04:07'}
-2020-11-03 10:13:21,514 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==>  Preparing: DELETE FROM f1511b WHERE njpost!='D' AND trim(njpid) IN ('62')
-2020-11-03 10:13:21,517 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : ==> Parameters: 
-2020-11-03 10:13:21,539 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551513ZList : <==    Updates: 0
-2020-11-03 10:13:21,540 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==>  Preparing: DELETE FROM F551511Z WHERE trim(axpid) IN ('62')
-2020-11-03 10:13:21,540 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : ==> Parameters: 
-2020-11-03 10:13:21,554 DEBUG [http-nio-8014-exec-7] com.el.returnmsg.dao.F551513ZDao.deleteF551511ZList : <==    Updates: 0
-2020-11-03 10:13:21,554 INFO  [http-nio-8014-exec-7] com.el.returnmsg.controller.F551513ZController : delete info:撤销行数0,请检查数据是已过账或者异常
+2020-11-17 09:54:01,132 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Starting ReturnmsgApplicationTests on LAPTOP-MUFUSBOO with PID 7312 (started by alan in D:\Users\alan\IdeaProjects\returnmsg)
+2020-11-17 09:54:01,135 DEBUG [main] com.el.returnmsg.ReturnmsgApplicationTests : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-17 09:54:01,136 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : No active profile set, falling back to default profiles: default
+2020-11-17 09:54:02,532 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 09:54:02,632 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-11-17 09:54:02,912 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
+2020-11-17 09:54:02,960 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Started ReturnmsgApplicationTests in 2.111 seconds (JVM running for 3.031)
+2020-11-17 09:54:03,241 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService 'taskScheduler'
+2020-11-17 09:54:03,241 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 11:39:31,963 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Starting ReturnmsgApplicationTests on LAPTOP-MUFUSBOO with PID 8472 (started by alan in D:\Users\alan\IdeaProjects\returnmsg)
+2020-11-17 11:39:31,964 DEBUG [main] com.el.returnmsg.ReturnmsgApplicationTests : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-17 11:39:31,965 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : No active profile set, falling back to default profiles: default
+2020-11-17 11:39:33,292 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 11:39:33,390 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-11-17 11:39:33,723 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
+2020-11-17 11:39:33,791 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Started ReturnmsgApplicationTests in 2.059 seconds (JVM running for 2.815)
+2020-11-17 11:39:33,998 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService 'taskScheduler'
+2020-11-17 11:39:33,999 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 11:46:14,676 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Starting ReturnmsgApplication on LAPTOP-MUFUSBOO with PID 12700 (D:\Users\alan\IdeaProjects\returnmsg\target\classes started by alan in D:\Users\alan\IdeaProjects\returnmsg)
+2020-11-17 11:46:14,678 DEBUG [main] com.el.returnmsg.ReturnmsgApplication : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-17 11:46:14,678 INFO  [main] com.el.returnmsg.ReturnmsgApplication : No active profile set, falling back to default profiles: default
+2020-11-17 11:46:15,346 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8014 (http)
+2020-11-17 11:46:15,351 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-11-17 11:46:15,351 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-17 11:46:15,409 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/returnmsg] : Initializing Spring embedded WebApplicationContext
+2020-11-17 11:46:15,410 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 702 ms
+2020-11-17 11:46:15,622 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 11:46:15,661 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-11-17 11:46:15,729 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
+2020-11-17 11:46:15,760 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8014 (http) with context path '/returnmsg'
+2020-11-17 11:46:15,770 INFO  [main] com.el.returnmsg.ReturnmsgApplication : Started ReturnmsgApplication in 1.367 seconds (JVM running for 2.003)
+2020-11-17 12:34:25,208 INFO  [http-nio-8014-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/returnmsg] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 12:34:25,208 INFO  [http-nio-8014-exec-2] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-11-17 12:34:25,211 INFO  [http-nio-8014-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 3 ms
+2020-11-17 12:34:27,653 INFO  [http-nio-8014-exec-10] com.el.returnmsg.controller.F551513ZController : =========return begin=====
+2020-11-17 12:34:27,694 INFO  [http-nio-8014-exec-10] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2020-11-17 12:34:27,696 WARN  [http-nio-8014-exec-10] com.zaxxer.hikari.util.DriverDataSource : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-11-17 12:35:11,055 ERROR [http-nio-8014-exec-10] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Exception during pool initialization.
+java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:854)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy52.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy58.queryF551513ZList(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy59.queryF551513ZList(Unknown Source)
+	at com.el.returnmsg.service.F551513ZService.queryF551513ZList(F551513ZService.java:29)
+	at com.el.returnmsg.controller.F551513ZController.queryF551513ZList(F551513ZController.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:571)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588)
+	... 100 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21045 ms. /172.30.113.2 1521 30000 1 true
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:233)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510)
+	... 105 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:454)
+	at sun.nio.ch.Net.connect(Net.java:446)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:648)
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:189)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192)
+	... 107 common frames omitted
+2020-11-17 12:35:11,062 ERROR [http-nio-8014-exec-10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/returnmsg].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/returnmsg] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+### The error may exist in com/el/returnmsg/dao/F551513ZDao.java (best guess)
+### The error may involve com.el.returnmsg.dao.F551513ZDao.queryF551513ZList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection] with root cause
+java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:454)
+	at sun.nio.ch.Net.connect(Net.java:446)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:648)
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:189)
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:99)
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:77)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:192)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:174)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:510)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:548)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:682)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:309)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1596)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:588)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:793)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:57)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:747)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:562)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy52.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy58.queryF551513ZList(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy59.queryF551513ZList(Unknown Source)
+	at com.el.returnmsg.service.F551513ZService.queryF551513ZList(F551513ZService.java:29)
+	at com.el.returnmsg.controller.F551513ZController.queryF551513ZList(F551513ZController.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-17 12:36:14,349 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Starting ReturnmsgApplicationTests on LAPTOP-MUFUSBOO with PID 4880 (started by alan in D:\Users\alan\IdeaProjects\returnmsg)
+2020-11-17 12:36:14,350 DEBUG [main] com.el.returnmsg.ReturnmsgApplicationTests : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-17 12:36:14,350 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : No active profile set, falling back to default profiles: default
+2020-11-17 12:36:15,594 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 12:36:15,700 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page template: index
+2020-11-17 12:36:15,982 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Initializing ExecutorService 'taskScheduler'
+2020-11-17 12:36:16,038 INFO  [main] com.el.returnmsg.ReturnmsgApplicationTests : Started ReturnmsgApplicationTests in 1.918 seconds (JVM running for 2.574)
+2020-11-17 12:36:16,240 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler : Shutting down ExecutorService 'taskScheduler'
+2020-11-17 12:36:16,241 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'

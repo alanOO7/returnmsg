@@ -23,8 +23,8 @@ public class SaticScheduleTask {
     //@Scheduled(fixedRate=5000)
     private void configureTasks() {
 
-//        f551513ZService.queryF551513ZList("N","A");
-//        f551513ZService.queryF551513ZList("N","P");
+        f551513ZService.queryF551513ZList("N","A");
+        f551513ZService.queryF551513ZList("N","P");
 
     }
 }

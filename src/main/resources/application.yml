@@ -8,8 +8,8 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-#    url: jdbc:oracle:thin:@10.1.1.30:1521:DBTEST
-    url: jdbc:oracle:thin:@172.30.113.2:1521:e910
+#    url: jdbc:oracle:thin:@10.1.1.30:1521:DBTEST #测试
+    url: jdbc:oracle:thin:@172.30.113.2:1521:e910 #深业
     username: CRPDTA
 #    password: P1qaz#EDC
     password: CRPDTA
