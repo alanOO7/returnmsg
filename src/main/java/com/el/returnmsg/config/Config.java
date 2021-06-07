@@ -12,11 +12,12 @@ import org.springframework.stereotype.Component;
 @EnableAutoConfiguration
 @Configuration
 public class Config {
-    private static String returnMsg ;
+    private static String returnMsg;
 
     public String getReturnMsg() {
         return returnMsg;
     }
+
     @Value("${url.returnMsg}")
     public void setReturnMsg(String returnMsg) {
         Config.returnMsg = returnMsg;

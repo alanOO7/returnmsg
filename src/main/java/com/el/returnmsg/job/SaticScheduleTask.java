@@ -17,14 +17,15 @@ public class SaticScheduleTask {
 
     @Resource
     F551513ZService f551513ZService;
+
     //3.添加定时任务
     @Scheduled(cron = "0/5 * * * * ?")
     //或直接指定时间间隔，例如：5秒
     //@Scheduled(fixedRate=5000)
     private void configureTasks() {
 
-        f551513ZService.queryF551513ZList("N","A");
-        f551513ZService.queryF551513ZList("N","P");
+        f551513ZService.queryF551513ZList("N", "A");
+        f551513ZService.queryF551513ZList("N", "P");
 
     }
 }

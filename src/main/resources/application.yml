@@ -8,10 +8,10 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-#    url: jdbc:oracle:thin:@10.1.1.30:1521:DBTEST #测试
+    #    url: jdbc:oracle:thin:@10.1.1.30:1521:DBTEST #测试
     url: jdbc:oracle:thin:@172.30.113.2:1521:e910 #深业
     username: CRPDTA
-#    password: P1qaz#EDC
+    #    password: P1qaz#EDC
     password: CRPDTA
 
 
@@ -27,7 +27,7 @@ thymeleaf:
 logging:
   #level 日志等级 指定命名空间的日志输出
   level:
-#    com.el.returnmsg.dao: debug
+    #    com.el.returnmsg.dao: debug
     com.el.returnmsg: debug
   #file 指定输出文件的存储路径
   #pattern 指定输出场景的日志输出格式
@@ -39,4 +39,7 @@ logging:
     max-size: 10MB
 
 url:
-  returnMsg: http://172.30.133.5:1916/FuIDNpxH?iesb_api_key=fa9044da162c49549e86ace100b787fc
+  #测试
+  #returnMsg: http://172.30.133.5:1916/FuIDNpxH?iesb_api_key=fa9044da162c49549e86ace100b787fc
+  #生产
+  returnMsg: http://esb.sycommercial.com:8090/9tcA95M9?iesb_api_key=8fd32eb4fa8b45198418646d794370a6

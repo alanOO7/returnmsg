@@ -12,28 +12,35 @@ public class F551513ZJson {
     private String operator;
 
 
-    public void setOperationType(int operationType){
+    public void setOperationType(int operationType) {
         this.operationType = operationType;
     }
-    public int getOperationType(){
+
+    public int getOperationType() {
         return this.operationType;
     }
-    public void setPids(List<Integer> pids){
+
+    public void setPids(List<Integer> pids) {
         this.pids = pids;
     }
-    public List<Integer> getPids(){
+
+    public List<Integer> getPids() {
         return this.pids;
     }
-    public void setOperator(String operator){
+
+    public void setOperator(String operator) {
         this.operator = operator;
     }
-    public String getOperator(){
+
+    public String getOperator() {
         return this.operator;
     }
-    public void setOperateTime(String operateTime){
+
+    public void setOperateTime(String operateTime) {
         this.operateTime = operateTime;
     }
-    public String getOperateTime(){
+
+    public String getOperateTime() {
         return this.operateTime;
     }
 

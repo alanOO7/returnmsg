@@ -26,42 +26,44 @@ public class F551513ZController {
     F551513ZService f551513ZService;
 
     @RequestMapping("/return")
-    public String queryF551513ZList(@RequestParam String edsp,@RequestParam String actn){
+    public String queryF551513ZList(@RequestParam String edsp, @RequestParam String actn) {
         log.info("=========return begin=====");
-        return f551513ZService.queryF551513ZList(edsp,actn);
+        return f551513ZService.queryF551513ZList(edsp, actn);
 
     }
+
     @RequestMapping("/delete")
-    public String deleteF551513ZList(@RequestBody F551513ZJson inputJson){
+    public String deleteF551513ZList(@RequestBody F551513ZJson inputJson) {
         log.info("=========delete begin=====");
-        log.info("=inputJson="+ inputJson);
+        log.info("=inputJson=" + inputJson);
         System.out.println("inputJson = " + inputJson);
-        int i=100;
-        String message="Y";
-        String rtu="{\n" +
-                "    \"code\":"+i+",\n" +
-                "    \"message\":\""+message+"\"\n" +
+        int i = 100;
+        String message = "Y";
+        String rtu = "{\n" +
+                "    \"code\":" + i + ",\n" +
+                "    \"message\":\"" + message + "\"\n" +
                 "}";
         try {
-            int row=f551513ZService.deleteF551513ZList(inputJson);
-            if(row==0){
-                i=200;
-                message="撤销行数0,请检查数据是已过账或者异常";
+            int row = f551513ZService.deleteF551513ZList(inputJson);
+            if (row == 0) {
+                i = 100;
+                message = "Y";
             }
-        }catch (Exception e){
-            i=200;
-            message="撤销失败"+e.getMessage();
-         log.info("delete error:{}",e.toString());
+        } catch (Exception e) {
+            i = 200;
+            message = "撤销失败" + e.getMessage();
+            log.info("delete error:{}", e.toString());
         }
-        rtu="{\n" +
-                "    \"code\":"+i+",\n" +
-                "    \"message\":\""+message+"\"\n" +
+        rtu = "{\n" +
+                "    \"code\":" + i + ",\n" +
+                "    \"message\":\"" + message + "\"\n" +
                 "}";
-        log.info("delete info:{}",message);
+        log.info("delete info:{}", message);
         return rtu;
     }
+
     @RequestMapping("/updrecord")
-    public int updateF551513Z(String pid){
+    public int updateF551513Z(String pid) {
         return f551513ZService.updateF551513Z(pid);
     }
 }

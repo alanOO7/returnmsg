@@ -15,16 +15,18 @@ import java.util.List;
 @Repository
 @Mapper
 public interface F551513ZDao {
-    @Select("select * from f551513z where axedsp = #{edsp} and axactn=#{actn}")
-    List<F551513Z>  queryF551513ZList(@Param("edsp")String edsp,@Param("actn")String actn);
+    @Select("select * from PRODDTA.f551513z where trim(translate(axpid,'0123456789',' ')) is NULL and axpid!=' ' and axedsp = #{edsp} and axactn=#{actn}")
+    List<F551513Z> queryF551513ZList(@Param("edsp") String edsp, @Param("actn") String actn);
 
-    @Update("update f551513z set axedsp='Y' where axpid =#{pid}")
-    int updateF551513Z(@Param("pid")String pid);
+    @Update("update PRODDTA.f551513z set axedsp='Y' where axpid =#{pid}")
+    int updateF551513Z(@Param("pid") String pid);
 
     @DeleteProvider(type = Provider.class, method = "batchDelete")
     int deleteF551513ZList(F551513ZJson inputJson);
+
     @DeleteProvider(type = Provider.class, method = "batchDelete2")
     int deleteF551511ZList(F551513ZJson inputJson);
+
     class Provider {
 //        /* 批量插入 */
 //        public String batchInsert(Map map) {
@@ -47,7 +49,7 @@ public interface F551513ZDao {
         public String batchDelete(F551513ZJson inputJson) {
             List<Integer> students = inputJson.getPids();
             StringBuilder sb = new StringBuilder();
-            sb.append("DELETE FROM f1511b WHERE njpost!='D' AND trim(njpid) IN ('");
+            sb.append("DELETE FROM PRODDTA.f1511b WHERE njpost!='D' AND trim(njpid) IN ('");
 //            sb.append("DELETE FROM F551511Z WHERE   trim(AXpid) IN (");
             for (int i = 0; i < students.size(); i++) {
                 sb.append(students.get(i).toString());
@@ -63,7 +65,7 @@ public interface F551513ZDao {
         public String batchDelete2(F551513ZJson inputJson) {
             List<Integer> students = inputJson.getPids();
             StringBuilder sb = new StringBuilder();
-            sb.append("DELETE FROM F551511Z WHERE  trim(axpid) IN ('");
+            sb.append("DELETE FROM PRODDTA.F551511Z WHERE  trim(axpid) IN ('");
 //            sb.append("DELETE FROM F551511Z WHERE   trim(AXpid) IN (");
             for (int i = 0; i < students.size(); i++) {
                 sb.append(students.get(i).toString());

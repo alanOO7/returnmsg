@@ -18,13 +18,11 @@ import java.net.URL;
 public class RestfulWithoutPW {
 
     /**
-     *
-     *
      * @param url
      * @param param
      * @return
      */
-    public static String getRestfulWithoutPWResult(String url, String param){
+    public static String getRestfulWithoutPWResult(String url, String param) {
         String outputstr = null;
 
 
@@ -39,11 +37,11 @@ public class RestfulWithoutPW {
             URL targetUrl = new URL(url);
 
             HttpURLConnection httpConnection =
-                    (HttpURLConnection)targetUrl.openConnection();
+                    (HttpURLConnection) targetUrl.openConnection();
             httpConnection.setDoOutput(true);
             httpConnection.setRequestMethod("POST");
             httpConnection.setRequestProperty("Charset", "UTF-8");
-            httpConnection.setRequestProperty("Authorization",authorization);
+            httpConnection.setRequestProperty("Authorization", authorization);
 
 
             httpConnection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
